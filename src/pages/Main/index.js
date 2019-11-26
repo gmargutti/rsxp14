@@ -1,10 +1,11 @@
-import React, { Fragment } from "react";
-import SimpleChatForm from "../../components/chatbot";
+import React, { Fragment } from 'react';
+import SimpleChatForm from '../../components/chatbot';
 
-import Company from "../../components/company";
-import Job from "../../components/job";
+import Company from '../../components/company';
+import Job from '../../components/job';
+import Case from '../../components/cases';
 
-import { Header, Jobs, Companys, Cases } from "./styles";
+import { Header, Jobs, Companys, Cases } from './styles';
 
 export default function Main() {
   return (
@@ -32,7 +33,10 @@ export default function Main() {
         </div>
       </Companys>
       <Cases>
-        <h1>Cases</h1>
+        <Case />
+        <Case />
+        <Case />
+        <Case />
       </Cases>
     </Fragment>
   );
