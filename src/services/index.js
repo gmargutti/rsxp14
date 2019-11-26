@@ -4,7 +4,7 @@ const url = process.env.REACT_APP_TOTALVOICE_ENDPOINT
 
 const sendSms = ({numero_destino, mensagem, resposta_usuario = false, tags = '', 
                     multi_sms = true, data_criacao = ''}) => {
-    return axios.post(url, {
+    return axios.post(`${url}/sms`, {
         numero_destino,
         mensagem,
         resposta_usuario,
