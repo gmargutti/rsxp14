@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
 
 import Chatbot from '../../components/chatbot';
-import Case from '../../components/cases';
+import Company from '../../components/company';
 
-import { Header, Mission, Cases } from './styles';
+import { Header, Mission, Companys } from './styles';
 
 export default function Main() {
   return (
@@ -15,23 +15,23 @@ export default function Main() {
       <Mission>
         <h1>Nossa Missão</h1>
       </Mission>
-      <Cases>
+      <Companys>
         <div className="">
-          <Case />
-          <Case />
-          <Case />
+          <Company />
+          <Company />
+          <Company />
         </div>
         <div className="">
-          <Case />
-          <Case />
-          <Case />
+          <Company />
+          <Company />
+          <Company />
         </div>
         <div className="">
-          <Case />
-          <Case />
-          <Case />
+          <Company />
+          <Company />
+          <Company />
         </div>
-      </Cases>
+      </Companys>
     </Fragment>
   );
 }
