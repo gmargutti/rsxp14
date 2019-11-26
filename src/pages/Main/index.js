@@ -1,6 +1,6 @@
-import React from 'react';
-import Chatbot from '../../components/chatbot';
+import React from "react";
+import SimpleChatForm from "../../components/chatbot";
 
 export default function Main() {
-  return <Chatbot />;
+  return <SimpleChatForm />;
 }
