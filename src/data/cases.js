@@ -1,4 +1,4 @@
-class cases {
+class Cases {
   get() {
     return [
       {
