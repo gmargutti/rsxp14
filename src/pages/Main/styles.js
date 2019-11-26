@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
-export const Container = styled.body`
+export const Header = styled.div`
   background: #010718;
+  height: 100%;
 
   h1 {
     @import url('https://fonts.googleapis.com/css?family=Aleo&display=swap');
@@ -13,4 +14,14 @@ export const Container = styled.body`
     padding: 50px;
     font-size: 2.3rem;
   }
+`;
+
+export const Mission = styled.div`
+  background: #ffc;
+  height: 100%;
+`;
+
+export const Cases = styled.div`
+  background: #0107ff;
+  height: 100%;
 `;
