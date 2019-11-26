@@ -11,9 +11,13 @@ const sendSms = ({numero_destino, mensagem, resposta_usuario = false, tags = '',
         tags,
         multi_sms,
         data_criacao,
+    }, {
+        headers: {
+            'Access-Token': process.env.REACT_APP_TOTALVOICE_ACCESS_TOKEN
+        }
     })
 }
 
-module.exports = {
+export default {
     sendSms,
 }
