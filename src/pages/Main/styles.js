@@ -24,4 +24,5 @@ export const Cases = styled.div`
   display: flex;
   background: #010718;
   height: 100%;
+  align-items: center;
 `;

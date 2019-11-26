@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react';
 
 import Chatbot from '../../components/chatbot';
+import Case from '../../components/cases';
 
 import { Header, Mission, Cases } from './styles';
 
@@ -15,7 +16,21 @@ export default function Main() {
         <h1>Nossa Missão</h1>
       </Mission>
       <Cases>
-        <h1>Cases de Sucesso</h1>
+        <div className="">
+          <Case />
+          <Case />
+          <Case />
+        </div>
+        <div className="">
+          <Case />
+          <Case />
+          <Case />
+        </div>
+        <div className="">
+          <Case />
+          <Case />
+          <Case />
+        </div>
       </Cases>
     </Fragment>
   );
