@@ -1,11 +1,14 @@
-import React, { Fragment } from 'react';
+import React from 'react';
+
 import Chatbot from '../../components/chatbot';
+
+import { Container } from './styles';
 
 export default function Main() {
   return (
-    <Fragment>
+    <Container>
       <h1>Por que ser um progamador?</h1>
       <Chatbot />
-    </Fragment>
+    </Container>
   );
 }
