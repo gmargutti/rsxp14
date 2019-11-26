@@ -15,9 +15,11 @@ export default function Cases() {
           Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore
           te sed. Elitr scripta ocurreret qui ad.
         </section>
-        <a href="/" target="_black">
-          Conheça Mais
-        </a>
+        <button>
+          <a href="/" target="_black">
+            Conheça Mais
+          </a>
+        </button>
       </Card>
     </Container>
   );
