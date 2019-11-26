@@ -14,7 +14,7 @@ export const Header = styled.div`
   }
 `;
 
-export const Mission = styled.div`
+export const Jobs = styled.div`
   display: flex;
   background: #1555fe;
   height: 100%;
