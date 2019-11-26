@@ -1,24 +1,27 @@
 import React from 'react';
 import { FaInstagram } from 'react-icons/fa';
 
-import { Card, Container } from './styles';
+import { Job, Container } from './styles';
 
 export default function Cases() {
   return (
     <Container>
-      <Card>
+      <Job>
         <div className="logo">
           <FaInstagram fontSize={40} color="#259" />
         </div>
-        <title>Instagram</title>
-        <section>
+        <section>Dev. Fron-end</section>
+        <p>
           Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore
           te sed. Elitr scripta ocurreret qui ad.
-        </section>
-        <a href="/" target="_black">
-          Conheça Mais
-        </a>
-      </Card>
+        </p>
+        <span>R$1599,00 até R$6999,00</span>
+        <button>
+          <a href="/" target="_black">
+            Saiba Mais
+          </a>
+        </button>
+      </Job>
     </Container>
   );
 }

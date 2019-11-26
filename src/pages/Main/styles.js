@@ -14,7 +14,7 @@ export const Header = styled.div`
   }
 `;
 
-export const Mission = styled.div`
+export const Jobs = styled.div`
   display: flex;
   background: #1555fe;
   height: 100%;
@@ -23,6 +23,13 @@ export const Mission = styled.div`
 export const Companys = styled.div`
   display: flex;
   background: #010718;
+  height: 100%;
+  align-items: center;
+`;
+
+export const Cases = styled.div`
+  display: flex;
+  background: #1555fe;
   height: 100%;
   align-items: center;
 `;
