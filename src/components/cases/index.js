@@ -1,5 +1,5 @@
 import React from 'react';
 
-export default function Cases() {
+export default function Company() {
   return <div />;
 }

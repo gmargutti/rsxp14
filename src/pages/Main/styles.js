@@ -20,8 +20,9 @@ export const Mission = styled.div`
   height: 100%;
 `;
 
-export const Cases = styled.div`
+export const Companys = styled.div`
   display: flex;
   background: #010718;
   height: 100%;
+  align-items: center;
 `;
