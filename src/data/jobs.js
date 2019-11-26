@@ -1,8 +1,29 @@
 export default [
   {
-    img: '',
-    header: '',
-    body:
-      'Steven Paul Jobs foi um inventor, empresário e magnata americano no setor da informática. Notabilizou-se como co-fundador, presidente e diretor executivo da Apple Inc. e por revolucionar seis indústrias: computadores pessoais, filmes de animação, música, telefones, tablets e publicações digitais. ',
+      img: '/public/assets/1',
   },
-];
+  {
+      img: '/public/assets/2',
+  },
+  {
+      img: '/public/assets/3',
+  },
+  {
+      img: '/public/assets/4',
+  },
+  {
+      img: '/public/assets/5',
+  },
+  {
+      img: '/public/assets/6',
+  },
+  {
+      img: '/public/assets/7',
+  },
+  {
+      img: '/public/assets/8',
+  },
+  {
+      img: '/public/assets/9',
+  },
+]
