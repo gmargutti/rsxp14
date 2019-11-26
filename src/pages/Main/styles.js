@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Header = styled.div`
-  background: #010718;
+  background: #000140;
   height: 100%;
 
   h1 {
@@ -17,11 +17,12 @@ export const Header = styled.div`
 `;
 
 export const Mission = styled.div`
-  background: #ffc;
+  background: #0004bf;
   height: 100%;
 `;
 
 export const Cases = styled.div`
-  background: #0107ff;
+  background: #000380;
   height: 100%;
+  color: #fff;
 `;
