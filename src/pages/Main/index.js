@@ -14,21 +14,11 @@ export default function Main() {
         <Chatbot />
       </Header>
       <Jobs>
-        <div className="">
-          <Job />
-          <Job />
-          <Job />
-        </div>
-        <div className="">
-          <Job />
-          <Job />
-          <Job />
-        </div>
-        <div className="">
-          <Job />
-          <Job />
-          <Job />
-        </div>
+        <Job />
+        <Job />
+        <Job />
+        <Job />
+        <Job />
       </Jobs>
       <Companys>
         <div className="">

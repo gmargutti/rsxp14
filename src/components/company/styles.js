@@ -10,9 +10,9 @@ export const Card = styled.div`
   display: flex;
   flex-direction: column;
 
-  padding: 35px;
+  padding: 25px;
   background: #fff;
-  margin: 20px;
+  margin: 30px;
   border-radius: 5px;
 
   .logo {

@@ -16,7 +16,7 @@ export default function Cases() {
           te sed. Elitr scripta ocurreret qui ad.
         </section>
         <a href="/" target="_black">
-          Learn More
+          Conheça Mais
         </a>
       </Card>
     </Container>
