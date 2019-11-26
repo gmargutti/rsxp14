@@ -9,7 +9,6 @@ export default function Main() {
   return (
     <Fragment>
       <Header>
-        <img src={img} />
         <h1>Por que ser um progamador?</h1>
         <Chatbot />
       </Header>
