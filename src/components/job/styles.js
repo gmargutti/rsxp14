@@ -4,6 +4,7 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 `;
 
 export const Job = styled.div`
@@ -12,9 +13,13 @@ export const Job = styled.div`
   justify-content: space-between;
   padding: 35px;
   background: #fff;
-  margin: 10px;
+  margin: 0px 10px;
   border-radius: 5px;
   height: 70%;
+
+  -webkit-box-shadow: 0px 0px 20px -3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 20px -3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 20px -3px rgba(0, 0, 0, 0.75);
 
   .logo {
     text-align: center;

@@ -26,3 +26,10 @@ export const Companys = styled.div`
   height: 100%;
   align-items: center;
 `;
+
+export const Cases = styled.div`
+  display: flex;
+  background: #1555fe;
+  height: 100%;
+  align-items: center;
+`;

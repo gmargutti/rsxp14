@@ -4,7 +4,7 @@ import Chatbot from '../../components/chatbot';
 import Company from '../../components/company';
 import Job from '../../components/job';
 
-import { Header, Jobs, Companys } from './styles';
+import { Header, Jobs, Companys, Cases } from './styles';
 
 export default function Main() {
   return (
@@ -14,7 +14,6 @@ export default function Main() {
         <Chatbot />
       </Header>
       <Jobs>
-        <Job />
         <Job />
         <Job />
         <Job />
@@ -31,12 +30,10 @@ export default function Main() {
           <Company />
           <Company />
         </div>
-        <div className="">
-          <Company />
-          <Company />
-          <Company />
-        </div>
       </Companys>
+      <Cases>
+        <h1>Cases</h1>
+      </Cases>
     </Fragment>
   );
 }
