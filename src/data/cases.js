@@ -48,6 +48,12 @@ class Cases {
         header: "",
         body:
           'O game de smartphones e tablets "Flappy Bird" tem arrecadado aproximadamente US$ 50 mil (cerca de R$ 119 mil) por dia com anúncios, afirmou o criador do jogo, o vietnamita Dong Nguyen, em entrevista ao site "The Verge"'
+      },
+      {
+        img: "",
+        header: "",
+        body:
+          "Google LLC é uma empresa multinacional de serviços online e software dos Estados Unidos. O Google hospeda e desenvolve uma série de serviços e produtos baseados na internet e gera lucro principalmente através da publicidade pelo AdWords. A Google é a principal subsidiária da Alphabet Inc"
       }
     ];
   }
