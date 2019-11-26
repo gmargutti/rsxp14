@@ -9,7 +9,7 @@ const configBot = {
   botDelay: 1000,
   headerTitle: "",
   recognitionLang: "Pt-br",
-  botAvatar: ""
+  botAvatar: "https://media2.giphy.com/media/3eP3Vo0fcJBOqPFnjt/source.gif"
 };
 
 //Palhetas do bot
@@ -52,17 +52,111 @@ class SimpleChatForm extends Component {
           handleEnd={this.handleEnd}
           speechSynthesis={{ enable: true, lang: "PT-br" }}
           steps={[
-            // Bem vindo entrada
             {
-              id: "welcome",
+              id: "bemvindo",
               message:
                 "Olá meu nome é ... estou muito feliz em lhe ajudar 😍.Qual o seu nome?",
               trigger: "nome"
             },
             {
               id: "nome",
-              message:
-                "Olá meu nome é ... estou muito feliz em lhe ajudar 😍.Qual o seu nome?",
+              user: true,
+              trigger: "respostanome"
+            },
+            // {
+            //   id: "respostanome",
+            //   message: "Olá {previousValue} qual a sua idade?",
+            //   trigger: "idade"
+            // },
+
+            // {
+            //   id: "idade",
+            //   user: true,
+            //   trigger: "respostaidade",
+            //   validator: value => {
+            //     if (isNaN(value)) {
+            //       return "Valor deve ser um número";
+            //     } else if (value <= 0) {
+            //       return "Valor deve ser positivo";
+            //     } else if (value > 122) {
+            //       return `${value}? Você não me engana haha`;
+            //     }
+            //     return true;
+            //   }
+            // },
+            {
+              id: "respostanome",
+              message: "Qual seu telefone? (Ex:. 85999517039) ",
+              trigger: "telefone"
+            },
+            {
+              id: "telefone",
+              user: true,
+              trigger: "respostatelefone"
+            },
+            {
+              id: "respostatelefone",
+              message: "Qual seu email? (Ex:. robo@gmail.com) ",
+              trigger: "email"
+            },
+            {
+              id: "email",
+              user: true,
+              trigger: "respostatemail"
+            },
+            {
+              id: "respostatemail",
+              message: "Qual o seu conhecimento na área de programação?",
+              trigger: "conhecimento"
+            },
+            {
+              id: "conhecimento",
+              options: [
+                {
+                  value: "nenhum",
+                  label: "Nenhum",
+                  trigger: "nenhumconhecimento"
+                },
+                {
+                  value: "ouvifalar",
+                  label: "Já ouvi falar e não tenho conhecimento",
+                  trigger: "ouvifaalarconhecimento"
+                },
+                {
+                  value: "contatoconteudo",
+                  label: "Tenho contato com o conteúdo",
+                  trigger: "contatoconteudoconhecimento"
+                }
+              ]
+            },
+            {
+              id: "nenhumconhecimento",
+              message: "Qual o opção te agrada mais?",
+              trigger: "respostanenhumconhecimento"
+            },
+            {
+              id: "ouvifaalarconhecimento",
+              message: "Qual o opção te agrada mais?",
+              trigger: "respostaouvifalarconhecimento"
+            },
+            {
+              id: "contatoconteudoconhecimento",
+              message: "Qual o opção te agrada mais?",
+              trigger: "respostacontatoconteudoconhecimento"
+            },
+            {
+              id: "respostanenhumconhecimento",
+              message: "teste",
+              end: true
+            },
+            {
+              id: "respostaouvifalarconhecimento",
+              message: "teste",
+              end: true
+            },
+            {
+              id: "respostacontatoconteudoconhecimento",
+              message: "teste",
               end: true
             }
           ]}
