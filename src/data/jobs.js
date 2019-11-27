@@ -1,6 +1,6 @@
 export default [
   {
-    img: 'https://jobs.solides.com/assets/img/logos_empresas/logo__teknisa.png',
+    img: 'https://media.licdn.com/dms/image/C560BAQFgwOw-EcXUig/company-logo_200_200/0?e=2159024400&v=beta&t=gbssMYi9AQiIMwYhn__CYLXoJOrZcfZ9m7lVRcqtx_E',
     description:
       'Irá compor a equipe de desenvolvimento atuando como full stack em um aplicativo de entretenimento! É imprescindível conhecimento em HTML5, CSS3, JavaScript e PHP. Buscamos uma pessoa que seja centrada, tenha o foco em resultados e engajado em aprender novos conhecimentos.',
     cargo: 'Desenvolvedor Fullstack Júnior na Teknisa',
@@ -12,8 +12,6 @@ export default [
   },
 
   {
-    img:
-      'https://livre.com.br/wp-content/uploads/2018/07/logo-cabecalho-livre.png',
     description:
       'Irá compor a equipe de desenvolvimento atuando com foco no front end e é importante ter uma noção do back end. ',
     cargo: 'Desenvolvedor Fullstack Júnior na Livre',

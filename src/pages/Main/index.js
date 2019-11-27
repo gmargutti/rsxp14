@@ -30,6 +30,7 @@ export default function Main() {
             initialPrice={job.salarioInicial}
             finalPrice={job.salarioFinal}
             link={job.urlVaga}
+            img={job.img}
           />
         ))}
       </Jobs>

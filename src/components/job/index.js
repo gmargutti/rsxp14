@@ -9,12 +9,16 @@ export default function Cases({
   initialPrice,
   finalPrice,
   link,
+  img
 }) {
   return (
     <Container>
       <Job>
         <div className="logo">
-          <FaInstagram fontSize={40} color="#259" />
+          {
+            img ? <img src={img} width='32' height='32' />
+            : <FaInstagram fontSize={40} color="#259" /> 
+          }
         </div>
         <section>{title}</section>
         <p>{description}</p>
