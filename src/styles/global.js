@@ -33,6 +33,10 @@ export default createGlobalStyle`
     color: #000;
   }
 
+  .rsc-header-title {
+    font-size: 16px;
+  }
+
   a {
     text-decoration: none;
   }
