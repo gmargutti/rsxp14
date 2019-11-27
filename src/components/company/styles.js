@@ -3,17 +3,19 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  width: 20%;
 `;
 
 export const Card = styled.div`
   display: flex;
   flex-direction: column;
-
+  justify-content: space-around;
   padding: 35px;
   background: #fff;
-  margin: 15px 40px;
+  margin: 0px 15px;
   border-radius: 5px;
+  height: 80%;
 
   -webkit-box-shadow: 0px 0px 5px -3px rgba(255, 255, 255, 1);
   -moz-box-shadow: 0px 0px 5px -3px rgba(255, 255, 255, 1);

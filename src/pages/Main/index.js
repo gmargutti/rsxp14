@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect } from 'react';
+import React, { Fragment } from 'react';
 import SimpleChatForm from '../../components/chatbot';
 
 import Company from '../../components/company';
@@ -41,13 +41,11 @@ export default function Main() {
       </Jobs>
       <Companys>
         {companyObject.map(company => (
-          <div className="">
-            <Company
-              company={company.name}
-              description={company.description}
-              link={company.link}
-            />
-          </div>
+          <Company
+            company={company.name}
+            description={company.description}
+            link={company.link}
+          />
         ))}
       </Companys>
       <Cases>

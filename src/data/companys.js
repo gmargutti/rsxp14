@@ -24,12 +24,6 @@ export default [
     link: 'https://nubank.com.br/',
   },
   {
-    name: 'Americanas',
-    description:
-      ' é uma empresa brasileira do segmento de varejo fundada em 1929 na cidade de Niterói pelo austríaco Max Landesmann e pelos norte-americanos John Lee, Glen Matson, James Marshall e Batson Borger. A empresa conta com mais de 1320 estabelecimentos de vendas em todo o Brasil.',
-    link: 'https://www.americanas.com.br/',
-  },
-  {
     name: 'Hotmart',
     description:
       'é uma plataforma online que permite ganhar dinheiro com projetos na internet! Hoje existe duas formas de trabalhar com Hotmart: Criando cursos/ produtos digitais e vendendo na internet. Tornando-se Afiliado, semelhante a um revendedor, você ganha de 10 até 60% de comissão da venda.',

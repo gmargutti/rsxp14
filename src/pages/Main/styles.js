@@ -23,9 +23,9 @@ export const Jobs = styled.div`
 
 export const Companys = styled.div`
   display: flex;
+  justify-content: space-around;
   background: #010718;
   height: 100%;
-  align-items: center;
 `;
 
 export const Cases = styled.div`

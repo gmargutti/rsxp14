@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { FaInstagram } from 'react-icons/fa';
+import { FaLuggageCart } from 'react-icons/fa';
 
 import { Card, Container } from './styles';
 
@@ -9,7 +9,7 @@ export default function Cases({ description, company, link }) {
     <Container>
       <Card>
         <div className="logo">
-          <FaInstagram fontSize={40} color="#259" />
+          <FaLuggageCart fontSize={40} color="#259" />
         </div>
         <section>
           <b>{company}</b> {description}
