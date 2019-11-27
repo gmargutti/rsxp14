@@ -15,12 +15,10 @@ export default function Companies({ description, company, link }) {
   return (
     <Container>
       <Card>
-        <div className="logo">
-          {companiesFa[company]()}
-        </div>
-        <section>
+        <div className="logo">{companiesFa[company]()}</div>
+        <p>
           <b>{company}</b> {description}
-        </section>
+        </p>
         <button>
           <a href={link} target="_black">
             Conheça Mais

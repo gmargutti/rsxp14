@@ -9,16 +9,17 @@ export default function Jobs({
   initialPrice,
   finalPrice,
   link,
-  img
+  img,
 }) {
   return (
     <Container>
       <Job>
         <div className="logo">
-          {
-            img ? <img src={img} width='32' height='32' />
-            : <FaInstagram fontSize={40} color="#259" /> 
-          }
+          {img ? (
+            <img src={img} width="32" height="32" alt="image" />
+          ) : (
+            <FaInstagram fontSize={40} color="#259" />
+          )}
         </div>
         <section>{title}</section>
         <p>{description}</p>

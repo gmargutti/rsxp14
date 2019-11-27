@@ -18,6 +18,7 @@ export default function Main() {
     <Fragment>
       <SimpleChatForm />
       <Header>
+        {/* <h1>Por que ser um desenvolvedor ?</h1> */}
         <video autoPlay loop muted>
           <source src={video} type="video/mp4"></source>
         </video>

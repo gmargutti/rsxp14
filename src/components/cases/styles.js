@@ -23,12 +23,13 @@ export const Case = styled.div`
 
   span {
     color: #000;
+    text-align: left;
     padding-left: 15px;
     font-size: 1.3rem;
   }
 
   p {
-    color: #888;
+    color: #777;
     padding: 15px;
   }
 
