@@ -23,10 +23,4 @@ export default [
       'é uma empresa startup brasileira pioneira no segmento de serviços financeiros, atuando como operadora de cartões de crédito e fintech com operações no Brasil, sediada em São Paulo e fundada em 6 de maio de 2013 por David Vélez.',
     link: 'https://nubank.com.br/',
   },
-  {
-    name: 'Hotmart',
-    description:
-      'é uma plataforma online que permite ganhar dinheiro com projetos na internet! Hoje existe duas formas de trabalhar com Hotmart: Criando cursos/ produtos digitais e vendendo na internet. Tornando-se Afiliado, semelhante a um revendedor, você ganha de 10 até 60% de comissão da venda.',
-    link: 'https://www.hotmart.com/pt-BR',
-  },
 ];

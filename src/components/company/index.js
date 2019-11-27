@@ -9,11 +9,11 @@ export default function Cases({ description, company, link }) {
     <Container>
       <Card>
         <div className="logo">
-          <FaRegBuilding fontSize={40} color="#259" />
+          <FaRegBuilding fontSize={40} color="#fafafa" />
         </div>
-        <section>
+        <p>
           <b>{company}</b> {description}
-        </section>
+        </p>
         <button>
           <a href={link} target="_black">
             Conheça Mais

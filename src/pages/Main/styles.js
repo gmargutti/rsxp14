@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const Header = styled.div`
   display: flex;
   background: #010718;
+
   video {
     height: 100%;
     width: 100%;
@@ -37,7 +38,7 @@ export const Jobs = styled.div`
 export const Companys = styled.div`
   display: flex;
   justify-content: space-around;
-  background: #010718;
+  background: #d9d9d9;
   height: 100%;
 `;
 

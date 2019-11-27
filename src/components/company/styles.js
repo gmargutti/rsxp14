@@ -12,9 +12,8 @@ export const Card = styled.div`
   flex-direction: column;
   justify-content: space-around;
   padding: 35px;
-  background: #fff;
-  margin: 0px 15px;
-  border-radius: 5px;
+  background: #141414;
+  border-radius: 10px;
   height: 80%;
 
   -webkit-box-shadow: 0px 0px 5px -3px rgba(255, 255, 255, 1);
@@ -25,21 +24,22 @@ export const Card = styled.div`
     text-align: center;
   }
 
-  section {
+  p {
     color: #212529;
     padding: 10px;
+    color: #fafafa;
   }
 
   a {
     text-align: center;
     font-size: 1rem;
-    color: #fff;
+    color: #fafafa;
     font-weight: bold;
   }
 
   button {
-    border: solid #1555fe 1px;
-    background: #1555fe;
+    border: solid #ce2d35 1px;
+    background: #ce2d35;
     padding: 10px;
     border-radius: 10px;
     transition: 0.5s;
@@ -49,7 +49,7 @@ export const Card = styled.div`
     background: #fff;
 
     a {
-      color: #1555fe;
+      color: #ce2d35;
     }
   }
 `;
