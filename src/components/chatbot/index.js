@@ -9,9 +9,6 @@ import DadosYoutube from "../dadosyoutube/index";
 import DadosArtigos from "../dadosartigos/index";
 import DadosCursos from "../dadoscursos/index";
 
-const TotalVoice = require("totalvoice-node");
-const client = new TotalVoice("91a41c55c8d99f926a5d42f5e7c20115");
-
 const configBot = {
   width: "500px",
   height: "600px",
@@ -36,20 +33,6 @@ const theme = {
 };
 
 class SimpleChatForm extends Component {
-  componentDidMount() {
-    this.handleEnd = this.handleEnd.bind(this);
-  }
-
-  handleEnd({ _, values }) {
-    const message = `Olá ${values[0]}  está interessado em ser um programador com email ${values[2]} ajude ele a ser um grande programador `;
-
-    client.sms.enviar("85999111039", message).then(() => {
-      console.log("Deu bom o sms");
-    });
-
-    window.location.reload();
-  }
-
   render() {
     return (
       <ThemeProvider theme={theme}>
