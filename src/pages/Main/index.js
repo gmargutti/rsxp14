@@ -45,7 +45,7 @@ export default function Main() {
       </Companys>
       <Cases>
         {caseObject.map(c => (
-          <Case name={c.header} description={c.body} />
+          <Case name={c.header} description={c.body} img={c.img} />
         ))}
       </Cases>
     </Fragment>

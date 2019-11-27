@@ -3,7 +3,7 @@ import { FaInstagram } from 'react-icons/fa';
 
 import { Job, Container } from './styles';
 
-export default function Cases({
+export default function Jobs({
   title,
   description,
   initialPrice,
