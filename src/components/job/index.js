@@ -3,18 +3,23 @@ import { FaInstagram } from 'react-icons/fa';
 
 import { Job, Container } from './styles';
 
-export default function Cases({
+export default function Jobs({
   title,
   description,
   initialPrice,
   finalPrice,
   link,
+  img,
 }) {
   return (
     <Container>
       <Job>
         <div className="logo">
-          <FaInstagram fontSize={40} color="#ce2d35" />
+          {img ? (
+            <img src={img} width="32" height="32" alt="image" />
+          ) : (
+            <FaInstagram fontSize={40} color="#259" />
+          )}
         </div>
         <section>{title}</section>
         <p>{description}</p>

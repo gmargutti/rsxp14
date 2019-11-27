@@ -38,4 +38,8 @@ export const Case = styled.div`
     display: flex;
     flex-direction: row;
   }
+
+  .logo {
+    text-align: center;
+  }
 `;
