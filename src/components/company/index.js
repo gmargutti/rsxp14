@@ -1,12 +1,6 @@
 import React from 'react';
 
-import {
-  FaRegBuilding,
-  FaAmazon,
-  FaInstagram,
-  FaFacebook,
-  FaAirbnb,
-} from 'react-icons/fa';
+import { FaAmazon, FaInstagram, FaFacebook, FaAirbnb } from 'react-icons/fa';
 
 import { Card, Container } from './styles';
 

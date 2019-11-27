@@ -1,24 +1,29 @@
 import React from 'react';
-import { FaInstagram } from 'react-icons/fa';
 
-import { FaApple, FaLinux, FaDove, FaLinkedin, FaFacebook, FaTwitter, FaYoutube, FaCandyCane } from 'react-icons/fa';
+import {
+  FaApple,
+  FaLinux,
+  FaDove,
+  FaLinkedin,
+  FaFacebook,
+  FaTwitter,
+  FaYoutube,
+  FaCandyCane,
+} from 'react-icons/fa';
 
 import { Case, Container } from './styles';
-import cases from '../../data/cases';
 
-export default function Cases({ name, description, img }) {
+export default function Cases({ name, description }) {
   const casesFa = {
-    'Steven Paul': () => (<FaApple fontSize={40} color="#000" />),
-    'Linus Torvalds': () => (<FaLinux fontSize={40} color="#000" />),
-    'Angry Birds': () => (<FaDove fontSize={40} color="#000" />),
-    'Candy Crush': () => (<FaCandyCane fontSize={40} color="#000" />)
-  }
+    'Steven Paul': () => <FaApple fontSize={40} color="#000" />,
+    'Linus Torvalds': () => <FaLinux fontSize={40} color="#000" />,
+    'Angry Birds': () => <FaDove fontSize={40} color="#000" />,
+    'Candy Crush': () => <FaCandyCane fontSize={40} color="#000" />,
+  };
   return (
     <Container>
       <Case>
-      <div className="logo">
-          {casesFa[name]()}
-        </div>
+        <div className="logo">{casesFa[name]()}</div>
         <span>{name}</span>
         <p>{description}</p>
         <div className="icons">

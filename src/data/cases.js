@@ -1,12 +1,7 @@
-import amazon from '../assets/10.jpg';
 import abird from '../assets/11.png';
 import mac from '../assets/12.png';
 import candy from '../assets/13.png';
-import fbird from '../assets/14.jpg';
-import google from '../assets/15.jpg';
 import linux from '../assets/16.jpg';
-import face from '../assets/17.png';
-import ms from '../assets/18.jpg';
 
 export default [
   {
