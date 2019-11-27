@@ -1,28 +1,28 @@
-import React, { Component } from "react";
-import ChatBot from "react-simple-chatbot";
-import { ThemeProvider } from "styled-components";
+import React, { Component } from 'react';
+import ChatBot from 'react-simple-chatbot';
+import { ThemeProvider } from 'styled-components';
 
 const configBot = {
-  width: "500px",
-  height: "600px",
+  width: '500px',
+  height: '600px',
   floating: true,
   botDelay: 1000,
-  headerTitle: "",
-  recognitionLang: "Pt-br",
-  botAvatar: "https://media2.giphy.com/media/3eP3Vo0fcJBOqPFnjt/source.gif"
+  headerTitle: '',
+  recognitionLang: 'Pt-br',
+  botAvatar: 'https://media2.giphy.com/media/3eP3Vo0fcJBOqPFnjt/source.gif',
 };
 
 //Palhetas do bot
 const theme = {
-  background: "#f5f8fb",
-  fontFamily: "Arial, Helvetica, sans-serif",
-  headerBgColor: "#333",
-  headerFontColor: "#fff",
-  headerFontSize: "17px",
-  botBubbleColor: "#333",
-  botFontColor: "#fff",
-  userBubbleColor: "#fff",
-  userFontColor: "#4a4a4a"
+  background: '#f5f8fb',
+  fontFamily: 'Arial, Helvetica, sans-serif',
+  headerBgColor: '#1B998F',
+  headerFontColor: '#fff',
+  headerFontSize: '17px',
+  botBubbleColor: '#1B998F',
+  botFontColor: '#fff',
+  userBubbleColor: '#fff',
+  userFontColor: '#000',
 };
 
 class SimpleChatForm extends Component {
@@ -50,18 +50,18 @@ class SimpleChatForm extends Component {
       <ThemeProvider theme={theme}>
         <ChatBot
           handleEnd={this.handleEnd}
-          speechSynthesis={{ enable: true, lang: "PT-br" }}
+          speechSynthesis={{ enable: true, lang: 'PT-br' }}
           steps={[
             {
-              id: "bemvindo",
+              id: 'bemvindo',
               message:
-                "Olá meu nome é ... estou muito feliz em lhe ajudar 😍.Qual o seu nome?",
-              trigger: "nome"
+                'Olá meu nome é ... estou muito feliz em lhe ajudar 😍.Qual o seu nome?',
+              trigger: 'nome',
             },
             {
-              id: "nome",
+              id: 'nome',
               user: true,
-              trigger: "respostanome"
+              trigger: 'respostanome',
             },
             // {
             //   id: "respostanome",
@@ -85,80 +85,80 @@ class SimpleChatForm extends Component {
             //   }
             // },
             {
-              id: "respostanome",
-              message: "Qual seu telefone? (Ex:. 85999517039) ",
-              trigger: "telefone"
+              id: 'respostanome',
+              message: 'Qual seu telefone? (Ex:. 85999517039) ',
+              trigger: 'telefone',
             },
             {
-              id: "telefone",
+              id: 'telefone',
               user: true,
-              trigger: "respostatelefone"
+              trigger: 'respostatelefone',
             },
             {
-              id: "respostatelefone",
-              message: "Qual seu email? (Ex:. robo@gmail.com) ",
-              trigger: "email"
+              id: 'respostatelefone',
+              message: 'Qual seu email? (Ex:. robo@gmail.com) ',
+              trigger: 'email',
             },
             {
-              id: "email",
+              id: 'email',
               user: true,
-              trigger: "respostatemail"
+              trigger: 'respostatemail',
             },
             {
-              id: "respostatemail",
-              message: "Qual o seu conhecimento na área de programação?",
-              trigger: "conhecimento"
+              id: 'respostatemail',
+              message: 'Qual o seu conhecimento na área de programação?',
+              trigger: 'conhecimento',
             },
             {
-              id: "conhecimento",
+              id: 'conhecimento',
               options: [
                 {
-                  value: "nenhum",
-                  label: "Nenhum",
-                  trigger: "nenhumconhecimento"
+                  value: 'nenhum',
+                  label: 'Nenhum',
+                  trigger: 'nenhumconhecimento',
                 },
                 {
-                  value: "ouvifalar",
-                  label: "Já ouvi falar e não tenho conhecimento",
-                  trigger: "ouvifaalarconhecimento"
+                  value: 'ouvifalar',
+                  label: 'Já ouvi falar e não tenho conhecimento',
+                  trigger: 'ouvifaalarconhecimento',
                 },
                 {
-                  value: "contatoconteudo",
-                  label: "Tenho contato com o conteúdo",
-                  trigger: "contatoconteudoconhecimento"
-                }
-              ]
+                  value: 'contatoconteudo',
+                  label: 'Tenho contato com o conteúdo',
+                  trigger: 'contatoconteudoconhecimento',
+                },
+              ],
             },
             {
-              id: "nenhumconhecimento",
-              message: "Qual o opção te agrada mais?",
-              trigger: "respostanenhumconhecimento"
+              id: 'nenhumconhecimento',
+              message: 'Qual o opção te agrada mais?',
+              trigger: 'respostanenhumconhecimento',
             },
             {
-              id: "ouvifaalarconhecimento",
-              message: "Qual o opção te agrada mais?",
-              trigger: "respostaouvifalarconhecimento"
+              id: 'ouvifaalarconhecimento',
+              message: 'Qual o opção te agrada mais?',
+              trigger: 'respostaouvifalarconhecimento',
             },
             {
-              id: "contatoconteudoconhecimento",
-              message: "Qual o opção te agrada mais?",
-              trigger: "respostacontatoconteudoconhecimento"
+              id: 'contatoconteudoconhecimento',
+              message: 'Qual o opção te agrada mais?',
+              trigger: 'respostacontatoconteudoconhecimento',
             },
             {
-              id: "respostanenhumconhecimento",
-              message: "teste",
-              end: true
+              id: 'respostanenhumconhecimento',
+              message: 'teste',
+              end: true,
             },
             {
-              id: "respostaouvifalarconhecimento",
-              message: "teste",
-              end: true
+              id: 'respostaouvifalarconhecimento',
+              message: 'teste',
+              end: true,
             },
             {
-              id: "respostacontatoconteudoconhecimento",
-              message: "teste",
-              end: true
-            }
+              id: 'respostacontatoconteudoconhecimento',
+              message: 'teste',
+              end: true,
+            },
           ]}
           placeholder="Digite aqui..."
           {...configBot}

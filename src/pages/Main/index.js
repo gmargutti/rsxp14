@@ -9,6 +9,8 @@ import jobObject from '../../data/jobs';
 import companyObject from '../../data/companys';
 import caseObject from '../../data/cases';
 
+import video from '../../video/background.mp4';
+
 import { Header, Jobs, Companys, Cases } from './styles';
 
 export default function Main() {
@@ -16,17 +18,10 @@ export default function Main() {
     <Fragment>
       <SimpleChatForm />
       <Header>
-        <h1>Por que ser um progamador?</h1>
-        <h2>
-          <b>O que é ser programador ?</b> Bem pela definição Em ciências da
-          computação; programador, desenvolvedor, codificador ou engenheiro de
-          software é alguém que escreve, desenvolve ou faz manutenção de
-          software em um grande sistema ou alguém que desenvolve software para
-          uso em computadores pessoais. Mas na verdade o programador é a pessoa
-          que vai mudar o mundo, “sim nós podemos” e devemos ser aqueles que
-          mudam o dia o dia da sociedade olha o impacto que teve o aplicativo do
-          uber nubank air b&b, whatsApp
-        </h2>
+        {/* <h1>Por que ser um desenvolvedor ?</h1> */}
+        <video autoPlay loop muted>
+          <source src={video} type="video/mp4"></source>
+        </video>
       </Header>
       <Jobs>
         {jobObject.map(job => (
