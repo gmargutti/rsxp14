@@ -30,7 +30,7 @@ export const Companys = styled.div`
 
 export const Cases = styled.div`
   display: flex;
+  justify-content: space-around;
   background: #1555fe;
   height: 100%;
-  align-items: center;
 `;

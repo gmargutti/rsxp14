@@ -7,7 +7,7 @@ import Case from '../../components/cases';
 
 import jobObject from '../../data/jobs';
 import companyObject from '../../data/companys';
-import caseObject from '../../data/jobs';
+import caseObject from '../../data/cases';
 
 import { Header, Jobs, Companys, Cases } from './styles';
 
@@ -51,14 +51,9 @@ export default function Main() {
         ))}
       </Companys>
       <Cases>
-        <div className="">
-          <Case />
-          <Case />
-        </div>
-        <div className="">
-          <Case />
-          <Case />
-        </div>
+        {caseObject.map(c => (
+          <Case name={c.header} description={c.body} />
+        ))}
       </Cases>
     </Fragment>
   );
