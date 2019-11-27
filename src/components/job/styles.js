@@ -44,6 +44,7 @@ export const Job = styled.div`
   span {
     color: #866;
     font-size: 1.1rem;
+    font-weight: bold;
   }
 
   a {

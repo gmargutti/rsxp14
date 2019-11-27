@@ -13,6 +13,16 @@ export default function Main() {
       <SimpleChatForm />
       <Header>
         <h1>Por que ser um progamador?</h1>
+        <h2>
+          Oque é ser programador ? Bem pela definição Em ciências da computação;
+          programador, desenvolvedor, codificador ou engenheiro de software é
+          alguém que escreve, desenvolve ou faz manutenção de software em um
+          grande sistema ou alguém que desenvolve software para uso em
+          computadores pessoais. Mas na verdade o programador é a pessoa que vai
+          mudar o mundo, “sim nós podemos” e devemos ser aqueles que mudam o dia
+          o dia da sociedade olha o impacto que teve o aplicativo do uber nubank
+          air b&b, whatsApp
+        </h2>
       </Header>
       <Jobs>
         <Job />
@@ -33,10 +43,14 @@ export default function Main() {
         </div>
       </Companys>
       <Cases>
-        <Case />
-        <Case />
-        <Case />
-        <Case />
+        <div className="">
+          <Case />
+          <Case />
+        </div>
+        <div className="">
+          <Case />
+          <Case />
+        </div>
       </Cases>
     </Fragment>
   );
