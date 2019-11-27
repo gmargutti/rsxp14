@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const Header = styled.div`
   display: flex;
   background: #010718;
-
   video {
     height: 100%;
     width: 100%;
@@ -12,7 +11,8 @@ export const Header = styled.div`
   h1 {
     @import url('https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap');
 
-    display: flex;
+    display: block;
+    position: absolute;
     flex-direction: row;
     justify-content: center;
 
@@ -30,7 +30,7 @@ export const Header = styled.div`
 export const Jobs = styled.div`
   display: flex;
   justify-content: space-around;
-  background: #1555fe;
+  background: #141414;
   height: 100%;
 `;
 
@@ -44,6 +44,6 @@ export const Companys = styled.div`
 export const Cases = styled.div`
   display: flex;
   justify-content: space-around;
-  background: #1555fe;
+  background: #141414;
   height: 100%;
 `;

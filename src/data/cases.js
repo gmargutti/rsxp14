@@ -17,7 +17,7 @@ export default [
   },
   {
     img: linux,
-    header: 'Linus Benedict Torvalds',
+    header: 'Linus Torvalds',
     body:
       '"Linus Benedict Torvalds é um engenheiro de software, nascido na Finlândia e naturalizado estado-unidense em 2010, criador, e por muito tempo o desenvolvedor mais importante do núcleo Linux, sendo utilizado em importantes sistemas Linux, Android e Chrome OS."',
   },

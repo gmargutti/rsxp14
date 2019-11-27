@@ -14,7 +14,7 @@ export default function Cases({
     <Container>
       <Job>
         <div className="logo">
-          <FaInstagram fontSize={40} color="#259" />
+          <FaInstagram fontSize={40} color="#ce2d35" />
         </div>
         <section>{title}</section>
         <p>{description}</p>

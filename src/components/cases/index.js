@@ -11,10 +11,10 @@ export default function Cases({ name, description }) {
         <span>{name}</span>
         <p>{description}</p>
         <div className="icons">
-          <FaLinkedin color="#000" fontSize="20px" />
-          <FaFacebook color="#000" fontSize="20px" />
-          <FaTwitter color="#000" fontSize="20px" />
-          <FaYoutube color="#000" fontSize="20px" />
+          <FaLinkedin color="#ce2d35" fontSize="20px" />
+          <FaFacebook color="#ce2d35" fontSize="20px" />
+          <FaTwitter color="#ce2d35" fontSize="20px" />
+          <FaYoutube color="#ce2d35" fontSize="20px" />
         </div>
       </Case>
     </Container>
