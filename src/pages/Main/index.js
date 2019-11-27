@@ -1,9 +1,11 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 import SimpleChatForm from '../../components/chatbot';
 
 import Company from '../../components/company';
 import Job from '../../components/job';
 import Case from '../../components/cases';
+
+import jobObject from '../../data/jobs';
 
 import { Header, Jobs, Companys, Cases } from './styles';
 
@@ -25,10 +27,15 @@ export default function Main() {
         </h2>
       </Header>
       <Jobs>
-        <Job />
-        <Job />
-        <Job />
-        <Job />
+        {jobObject.map(job => (
+          <Job
+            title={job.cargo}
+            description={job.description}
+            initialPrice={job.salarioInicial}
+            finalPrice={job.salarioFinal}
+            link={job.urlVaga}
+          />
+        ))}
       </Jobs>
       <Companys>
         <div className="">
