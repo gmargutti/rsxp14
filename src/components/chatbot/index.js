@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import ChatBot from "react-simple-chatbot";
 import { ThemeProvider } from "styled-components";
 
+import DadosNenhumArtesVisuais from "../dadosnenhumartesvisuais/index";
+import DadosNenhumLogicaeResolucao from "../dadosnenhumlogicaeresolucao/index";
+
 const configBot = {
   width: "500px",
   height: "600px",
@@ -144,9 +147,30 @@ class SimpleChatForm extends Component {
               message: "Qual o opção te agrada mais?",
               trigger: "respostacontatoconteudoconhecimento"
             },
+
             {
               id: "respostanenhumconhecimento",
-              message: "teste",
+              options: [
+                {
+                  value: "artesvisuais",
+                  label: "Artes visuais",
+                  trigger: "respostaartesvisuais"
+                },
+                {
+                  value: "logicaereproducao",
+                  label: "Lógica e resolução de problemas",
+                  trigger: "respostalogicaereproducao"
+                }
+              ]
+            },
+            {
+              id: "respostaartesvisuais",
+              component: <DadosNenhumArtesVisuais />,
+              end: true
+            },
+            {
+              id: "respostalogicaereproducao",
+              component: <DadosNenhumLogicaeResolucao />,
               end: true
             },
             {

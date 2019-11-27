@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Aleo&display=swap');
@@ -26,6 +26,10 @@ export default createGlobalStyle`
     font-size: 14px;
     font-family: 'Aleo', sans-serif;
     color: #fff;
+  }
+  
+  .rsc-input {
+    color: #000;
   }
 
   a {
