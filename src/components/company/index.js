@@ -11,11 +11,11 @@ import { Card, Container } from './styles';
 
 export default function Companies({ description, company, link }) {
   const companiesFa = {
-    Amazon: () => <FaAmazon fontSize={40} color="#259" />,
-    Instagram: () => <FaInstagram fontSize={40} color="#259" />,
-    Facebook: () => <FaFacebook fontSize={40} color="#259" />,
-    Nubank: () => <FaRegBuilding fontSize={40} color="#259" />,
-    Hotmart: () => <FaRegBuilding fontSize={40} color="#259" />,
+    Amazon: () => <FaAmazon fontSize={40} color="#fafafa" />,
+    Instagram: () => <FaInstagram fontSize={40} color="#fafafa" />,
+    Facebook: () => <FaFacebook fontSize={40} color="#fafafa" />,
+    Nubank: () => <FaRegBuilding fontSize={40} color="#fafafa" />,
+    Hotmart: () => <FaRegBuilding fontSize={40} color="#fafafa" />,
   };
   console.log(companiesFa[company]);
   return (
