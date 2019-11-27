@@ -10,7 +10,7 @@ export const Container = styled.div`
 export const Case = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 35px;
   background: #fff;
   margin: 0px 10px;
@@ -23,12 +23,13 @@ export const Case = styled.div`
 
   span {
     color: #000;
+    text-align: left;
     padding-left: 15px;
     font-size: 1.3rem;
   }
 
   p {
-    color: #888;
+    color: #777;
     padding: 15px;
   }
 
@@ -36,5 +37,9 @@ export const Case = styled.div`
     justify-content: space-around;
     display: flex;
     flex-direction: row;
+  }
+
+  .logo {
+    text-align: center;
   }
 `;

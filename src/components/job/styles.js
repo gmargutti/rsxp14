@@ -10,7 +10,7 @@ export const Container = styled.div`
 export const Job = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 35px;
   background: #fff;
   margin: 0px 10px;
@@ -41,7 +41,7 @@ export const Job = styled.div`
   }
 
   span {
-    color: #866;
+    color: rgba(0, 0, 0, 0.85);
     font-size: 1.1rem;
     font-weight: bold;
     justify-content: right;
@@ -57,8 +57,8 @@ export const Job = styled.div`
   }
 
   button {
-    background: #010760;
-    border: 1px solid #010760;
+    background: #ce2d35;
+    border: 1px solid #ce2d35;
     border-radius: 10px;
     padding: 15px;
     transition: 0.5s;
@@ -66,10 +66,10 @@ export const Job = styled.div`
 
   button:hover {
     background: #fff;
-    border: #010730 solid 1px;
+    border: #ce2d35 solid 1px;
 
     a {
-      color: #010730;
+      color: #ce2d35;
     }
   }
 `;

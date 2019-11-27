@@ -18,6 +18,7 @@ export default function Main() {
     <Fragment>
       <SimpleChatForm />
       <Header>
+        {/* <h1>Por que ser um desenvolvedor ?</h1> */}
         <video autoPlay loop muted>
           <source src={video} type="video/mp4"></source>
         </video>
@@ -30,6 +31,7 @@ export default function Main() {
             initialPrice={job.salarioInicial}
             finalPrice={job.salarioFinal}
             link={job.urlVaga}
+            img={job.img}
           />
         ))}
       </Jobs>
@@ -44,7 +46,7 @@ export default function Main() {
       </Companys>
       <Cases>
         {caseObject.map(c => (
-          <Case name={c.header} description={c.body} />
+          <Case name={c.header} description={c.body} img={c.img} />
         ))}
       </Cases>
     </Fragment>
