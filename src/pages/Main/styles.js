@@ -16,6 +16,7 @@ export const Header = styled.div`
 
 export const Jobs = styled.div`
   display: flex;
+  justify-content: space-around;
   background: #1555fe;
   height: 100%;
 `;

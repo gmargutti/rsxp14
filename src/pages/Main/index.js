@@ -7,9 +7,9 @@ import Case from '../../components/cases';
 
 import jobObject from '../../data/jobs';
 import companyObject from '../../data/companys';
+import caseObject from '../../data/jobs';
 
 import { Header, Jobs, Companys, Cases } from './styles';
-import companys from '../../data/companys';
 
 export default function Main() {
   return (
