@@ -14,11 +14,11 @@ class DadosNenhumLogicaeResolucao extends Component {
           dados (SQL, Postgres, MongoDB)
         </h1>
         <br></br>
-        <a href={linkone} style={{ color: "#32CD32" }} target="_black">
+        <a href={linkone} target="_black">
           Como começar em web back-end do zero?
         </a>
         <br></br>
-        <a href={linktwo} style={{ color: "#32CD32" }} target="_black">
+        <a href={linktwo} target="_black">
           O que faz um desenvolvedor?
         </a>
       </div>

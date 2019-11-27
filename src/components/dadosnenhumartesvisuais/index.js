@@ -15,11 +15,11 @@ class DadosNenhumArtesVisuais extends Component {
           estilo) e JavaScript (linguagem de script/programação).
         </h1>
         <br></br>
-        <a href={linkone} style={{ color: "#32CD32" }} target="_black">
+        <a href={linkone} target="_black">
           HTML básico - códigos HTML
         </a>
         <br></br>
-        <a href={linktwo} style={{ color: "#32CD32" }} target="_black">
+        <a href={linktwo} target="_black">
           Então, o que realmente é CSS?
         </a>
       </div>

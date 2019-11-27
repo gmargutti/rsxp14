@@ -5,12 +5,19 @@ import { ThemeProvider } from "styled-components";
 import DadosNenhumArtesVisuais from "../dadosnenhumartesvisuais/index";
 import DadosNenhumLogicaeResolucao from "../dadosnenhumlogicaeresolucao/index";
 
+import DadosYoutube from "../dadosyoutube/index";
+import DadosArtigos from "../dadosartigos/index";
+import DadosCursos from "../dadoscursos/index";
+
+const TotalVoice = require("totalvoice-node");
+const client = new TotalVoice("91a41c55c8d99f926a5d42f5e7c20115");
+
 const configBot = {
   width: "500px",
   height: "600px",
   floating: true,
   botDelay: 1000,
-  headerTitle: "",
+  headerTitle: "BotX",
   recognitionLang: "Pt-br",
   botAvatar: "https://media2.giphy.com/media/3eP3Vo0fcJBOqPFnjt/source.gif"
 };
@@ -19,10 +26,10 @@ const configBot = {
 const theme = {
   background: "#f5f8fb",
   fontFamily: "Arial, Helvetica, sans-serif",
-  headerBgColor: "#1B998F",
+  headerBgColor: "#CE2D35",
   headerFontColor: "#fff",
   headerFontSize: "17px",
-  botBubbleColor: "#1B998F",
+  botBubbleColor: "#CE2D35",
   botFontColor: "#fff",
   userBubbleColor: "#fff",
   userFontColor: "#000"
@@ -30,30 +37,24 @@ const theme = {
 
 class SimpleChatForm extends Component {
   componentDidMount() {
-    // this.handleEnd = this.handleEnd.bind(this);
+    this.handleEnd = this.handleEnd.bind(this);
   }
 
-  // handleEnd({ _, values }) {
-  //   //const site = `https://www.${values[3]}${values[2]}.ce.gov.br/pesquisa.php`;
-  //   //window.open(site);
+  handleEnd({ _, values }) {
+    const message = `Olá ${values[0]}  está interessado em ser um programador com email ${values[2]} ajude ele a ser um grande programador `;
 
-  //   const message = `Olá temos um pedido de ${values[0]} do municipio ${values[2]} de ${values[1]}, número de telefone é ${values[3]}`;
+    client.sms.enviar("85999111039", message).then(() => {
+      console.log("Deu bom o sms");
+    });
 
-  //   client.sms.enviar(values[3], message).then(() => {
-  //     console.log("Deu bom o sms");
-  //   });
-
-  //   alert(`Volte sempre ${values[0]}, assesi agradece!`);
-  //   // values = [];
-  //   //  window.location.reload();
-  // }
+    window.location.reload();
+  }
 
   render() {
     return (
       <ThemeProvider theme={theme}>
         <ChatBot
           handleEnd={this.handleEnd}
-          speechSynthesis={{ enable: true, lang: "PT-br" }}
           steps={[
             {
               id: "bemvindo",
@@ -66,27 +67,6 @@ class SimpleChatForm extends Component {
               user: true,
               trigger: "respostanome"
             },
-            // {
-            //   id: "respostanome",
-            //   message: "Olá {previousValue} qual a sua idade?",
-            //   trigger: "idade"
-            // },
-
-            // {
-            //   id: "idade",
-            //   user: true,
-            //   trigger: "respostaidade",
-            //   validator: value => {
-            //     if (isNaN(value)) {
-            //       return "Valor deve ser um número";
-            //     } else if (value <= 0) {
-            //       return "Valor deve ser positivo";
-            //     } else if (value > 122) {
-            //       return `${value}? Você não me engana haha`;
-            //     }
-            //     return true;
-            //   }
-            // },
             {
               id: "respostanome",
               message: "Qual seu telefone? (Ex:. 85999517039) ",
@@ -124,11 +104,6 @@ class SimpleChatForm extends Component {
                   value: "ouvifalar",
                   label: "Já ouvi falar e não tenho conhecimento",
                   trigger: "ouvifaalarconhecimento"
-                },
-                {
-                  value: "contatoconteudo",
-                  label: "Tenho contato com o conteúdo",
-                  trigger: "contatoconteudoconhecimento"
                 }
               ]
             },
@@ -142,12 +117,6 @@ class SimpleChatForm extends Component {
               message: "Qual o opção te agrada mais?",
               trigger: "respostaouvifalarconhecimento"
             },
-            {
-              id: "contatoconteudoconhecimento",
-              message: "Qual o opção te agrada mais?",
-              trigger: "respostacontatoconteudoconhecimento"
-            },
-
             {
               id: "respostanenhumconhecimento",
               options: [
@@ -166,21 +135,74 @@ class SimpleChatForm extends Component {
             {
               id: "respostaartesvisuais",
               component: <DadosNenhumArtesVisuais />,
-              end: true
+              trigger: "continue"
             },
             {
               id: "respostalogicaereproducao",
               component: <DadosNenhumLogicaeResolucao />,
-              end: true
+              trigger: "continue"
             },
             {
               id: "respostaouvifalarconhecimento",
-              message: "teste",
-              end: true
+              options: [
+                {
+                  value: "artigos",
+                  label: "Artigos para estudar",
+                  trigger: "respostaartigos"
+                },
+                {
+                  value: "youtube",
+                  label: "Canais no youtube",
+                  trigger: "respostayoutube"
+                },
+                {
+                  value: "cursos",
+                  label: "Cursos",
+                  trigger: "respostacursos"
+                }
+              ]
             },
             {
-              id: "respostacontatoconteudoconhecimento",
-              message: "teste",
+              id: "respostaartigos",
+              component: <DadosArtigos />,
+              trigger: "continue"
+            },
+            {
+              id: "respostayoutube",
+              component: <DadosYoutube />,
+              trigger: "continue"
+            },
+            {
+              id: "respostacursos",
+              component: <DadosCursos />,
+              trigger: "continue"
+            },
+
+            {
+              id: "continue",
+              message: "Você tem outra dúvida?",
+              trigger: "continue-question"
+            },
+
+            {
+              id: "continue-question",
+              options: [
+                {
+                  value: "sim",
+                  label: "Sim",
+                  trigger: "respostatemail"
+                },
+                {
+                  value: "nao",
+                  label: "Não",
+                  trigger: "nao-question"
+                }
+              ]
+            },
+            {
+              id: "nao-question",
+              message:
+                "Obrigado por falar comigo. Espero que você seja um futuro e grande programador",
               end: true
             }
           ]}
