@@ -1,38 +1,51 @@
-import React, { Fragment } from "react";
-import SimpleChatForm from "../../components/chatbot";
+import React, { Fragment } from 'react';
+import SimpleChatForm from '../../components/chatbot';
 
-import Company from "../../components/company";
-import Job from "../../components/job";
+import Company from '../../components/company';
+import Job from '../../components/job';
+import Case from '../../components/cases';
 
-import { Header, Jobs, Companys, Cases } from "./styles";
+import jobObject from '../../data/jobs';
+import companyObject from '../../data/companys';
+import caseObject from '../../data/cases';
+
+import video from '../../video/background.mp4';
+
+import { Header, Jobs, Companys, Cases } from './styles';
 
 export default function Main() {
   return (
     <Fragment>
       <SimpleChatForm />
       <Header>
-        <h1>Por que ser um progamador?</h1>
+        <video autoPlay loop muted>
+          <source src={video} type="video/mp4"></source>
+        </video>
       </Header>
       <Jobs>
-        <Job />
-        <Job />
-        <Job />
-        <Job />
+        {jobObject.map(job => (
+          <Job
+            title={job.cargo}
+            description={job.description}
+            initialPrice={job.salarioInicial}
+            finalPrice={job.salarioFinal}
+            link={job.urlVaga}
+          />
+        ))}
       </Jobs>
       <Companys>
-        <div className="">
-          <Company />
-          <Company />
-          <Company />
-        </div>
-        <div className="">
-          <Company />
-          <Company />
-          <Company />
-        </div>
+        {companyObject.map(company => (
+          <Company
+            company={company.name}
+            description={company.description}
+            link={company.link}
+          />
+        ))}
       </Companys>
       <Cases>
-        <h1>Cases</h1>
+        {caseObject.map(c => (
+          <Case name={c.header} description={c.body} />
+        ))}
       </Cases>
     </Fragment>
   );

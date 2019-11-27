@@ -19,13 +19,13 @@ const configBot = {
 const theme = {
   background: "#f5f8fb",
   fontFamily: "Arial, Helvetica, sans-serif",
-  headerBgColor: "#333",
+  headerBgColor: "#1B998F",
   headerFontColor: "#fff",
   headerFontSize: "17px",
-  botBubbleColor: "#333",
+  botBubbleColor: "#1B998F",
   botFontColor: "#fff",
   userBubbleColor: "#fff",
-  userFontColor: "#4a4a4a"
+  userFontColor: "#000"
 };
 
 class SimpleChatForm extends Component {

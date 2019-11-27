@@ -1,23 +1,24 @@
 import React from 'react';
-import { FaInstagram } from 'react-icons/fa';
+
+import { FaRegBuilding } from 'react-icons/fa';
 
 import { Card, Container } from './styles';
 
-export default function Cases() {
+export default function Cases({ description, company, link }) {
   return (
     <Container>
       <Card>
         <div className="logo">
-          <FaInstagram fontSize={40} color="#259" />
+          <FaRegBuilding fontSize={40} color="#259" />
         </div>
-        <title>Instagram</title>
         <section>
-          Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore
-          te sed. Elitr scripta ocurreret qui ad.
+          <b>{company}</b> {description}
         </section>
-        <a href="/" target="_black">
-          Conheça Mais
-        </a>
+        <button>
+          <a href={link} target="_black">
+            Conheça Mais
+          </a>
+        </button>
       </Card>
     </Container>
   );

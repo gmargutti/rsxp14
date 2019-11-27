@@ -3,19 +3,19 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
-  padding: 20px;
+  justify-content: space-around;
+  width: 20%;
 `;
 
 export const Job = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   padding: 35px;
   background: #fff;
   margin: 0px 10px;
   border-radius: 5px;
-  height: 70%;
+  height: 80%;
 
   -webkit-box-shadow: 0px 0px 20px -3px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 20px -3px rgba(0, 0, 0, 0.75);
@@ -38,16 +38,18 @@ export const Job = styled.div`
 
   p {
     color: #212529;
-    padding: 10px;
   }
 
   span {
     color: #866;
     font-size: 1.1rem;
+    font-weight: bold;
+    justify-content: right;
   }
 
   a {
     text-align: center;
+    justify-content: center;
     font-size: 1.1rem;
     text-decoration: none;
     color: #fff;
