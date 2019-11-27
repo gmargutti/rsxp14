@@ -10,9 +10,9 @@ export const Container = styled.div`
 export const Card = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  padding: 35px;
+  justify-content: space-between;
   background: #141414;
+  padding: 40px;
   border-radius: 10px;
   height: 80%;
 

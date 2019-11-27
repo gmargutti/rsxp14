@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaInstagram } from 'react-icons/fa';
+import { FaShoppingBag } from 'react-icons/fa';
 
 import { Job, Container } from './styles';
 
@@ -15,11 +15,7 @@ export default function Jobs({
     <Container>
       <Job>
         <div className="logo">
-          {img ? (
-            <img src={img} width="32" height="32" alt="image" />
-          ) : (
-            <FaInstagram fontSize={40} color="#259" />
-          )}
+          <FaShoppingBag fontSize={40} color="#000" />
         </div>
         <section>{title}</section>
         <p>{description}</p>

@@ -1,17 +1,23 @@
 import React from 'react';
 
-import { FaRegBuilding, FaAmazon, FaInstagram, FaFacebook, FaAirbnb } from 'react-icons/fa';
+import {
+  FaRegBuilding,
+  FaAmazon,
+  FaInstagram,
+  FaFacebook,
+  FaAirbnb,
+} from 'react-icons/fa';
 
 import { Card, Container } from './styles';
 
 export default function Companies({ description, company, link }) {
   const companiesFa = {
-     Amazon: () => (<FaAmazon fontSize={40} color="#259" />) ,
-     Instagram: () => (<FaInstagram fontSize={40} color="#259" />) ,
-     Facebook: () => (<FaFacebook fontSize={40} color="#259" />) ,
-     Airbnb: () => (<FaAirbnb fontSize={40} color="#259" />) ,
-  }
-  console.log(companiesFa[company])
+    Amazon: () => <FaAmazon fontSize={40} color="#fafafa" />,
+    Instagram: () => <FaInstagram fontSize={40} color="#fafafa" />,
+    Facebook: () => <FaFacebook fontSize={40} color="#fafafa" />,
+    Airbnb: () => <FaAirbnb fontSize={40} color="#fafafa" />,
+  };
+  console.log(companiesFa[company]);
   return (
     <Container>
       <Card>

@@ -10,7 +10,7 @@ export const Container = styled.div`
 export const Case = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 35px;
   background: #fff;
   margin: 0px 10px;
